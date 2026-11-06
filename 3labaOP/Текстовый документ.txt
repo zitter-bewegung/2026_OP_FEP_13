@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main(void)
+{
+    {
+        printf("\t\tПерша частина завдання\n\n");
+        printf("Ціле число у десятковому форматі\n");
+        int A = 132;
+        printf("Відповідь: ");
+        printf("%d", A);
+    }
+
+    {
+        printf("\nЦіле число у двійковому форматі\n");
+        int A = 12;
+        printf("Відповідь: ");
+        printf("%b", A, "\n");
+    }
+
+    {
+        printf("\nЦіле число у вісімковому форматі\n");
+        int A = 67;
+        printf("Відповідь:\f");
+        printf("%o", A);
+    }
+
+    {
+        printf("\nЦіле число у шістнадцятковому форматі\n");
+        int A = 52;
+        printf("Відповідь:\f");
+        printf("%X", A);
+    }
+
+    {
+        printf("\n\n");
+    }
+
+    printf("\t\tДруга частина завдання\n\n");
+
+    double num = 123.456789;
+
+    printf("Дійсне число у формі з плаваючою комою (%%f):\n");
+    printf("Відповідь: %f\n\n", num);
+
+    printf("Дійсне число в експоненційній формі (%%e):\n");
+    printf("Відповідь: %e\n\n", num);
+
+    printf("Дійсне число в гнучкій формі (%%g):\n");
+    printf("Відповідь: %g\n\n", num);
+
+    char ch = 'A';
+    printf("Символ (%%c):\n");
+    printf("Відповідь: %c\n\n", ch);
+
+    char str[] = "Hello World!";
+    printf("Стрічка (%%s):\n");
+    printf("Відповідь: %s\n\n", str);
+
+    int x = 42;
+    int *ptr = &x;
+    printf("Вказівник (%%p):\n");
+    printf("Адреса змінної x: %p\n", ptr);
+
+    return 0;
+}
