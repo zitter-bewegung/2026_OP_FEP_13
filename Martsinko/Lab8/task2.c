@@ -26,7 +26,21 @@ int arr1D[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
     } else {
         printf("елемент не знайдено!\n");
     }
+int find_min_max_sum(const int arr[], int size, int *min, int *max) {
+    *min = arr[0];
+    *max = arr[0];
 
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < *min) {
+            *min = arr[i];
+        }
+        if (arr[i] > *max) {
+            *max = arr[i];
+        }
+    }
+
+    return *min + *max;
+}''
     int* element_2d = get_element_2d(arr2D, 5, 3);
     if (element_2d != NULL) {
         printf("адреса: %p\n", (void*)element_2d);

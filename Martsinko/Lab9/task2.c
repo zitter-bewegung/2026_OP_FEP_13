@@ -46,7 +46,8 @@ int main(){
         if (wcscmp(group_list[j].name, group_list[j - 1].name) != 0) {
             unique_names++;
     }}
-    wprintf(L"Кількість унікальних імен: %d\n", unique_names);    size_t total_surname_len = 0; 
+    wprintf(L"Кількість унікальних імен: %d\n", unique_names);   
+    size_t total_surname_len = 0; 
 
     for (int j = 0; j < count; j++) {
         total_surname_len += wcslen(group_list[j].surname);

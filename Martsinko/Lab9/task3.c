@@ -17,7 +17,7 @@ int main(void) {
         return 0; 
     } 
     
-    email[strcspn(email, "\r\n")] = '\0'; 
+    email[strcspn(email, "\n")] = '\0'; 
     
     if (regcomp(&regex, pattern, REG_EXTENDED | REG_NOSUB) != 0) { 
         fprintf(stderr, "Помилка компіляції regex\n"); 
